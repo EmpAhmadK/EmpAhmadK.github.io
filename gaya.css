@@ -13,14 +13,14 @@ p {
 }
 
 h2 {
-	font-weight: bold;
+	font-weight: 500;
 	font-size: 2em;
 	text-align: center;
 }
 
 h3 {
 	font-size: 1.5em;
-	font-weight: bold;
+	font-weight: 500;
 	text-align: center;
 	border-bottom: solid black 3px;
 	font-variant: small-caps;
@@ -113,9 +113,9 @@ h3 {
 	padding: 15px;
 	max-width: 1200px;
 	font-family: 'Montserrat', 'Segoe UI', 'IBM Plex Sans Arabic', 'Al Bayan', 'Ebrima', sans-serif;
-	font-size: 2.5em;
-	font-weight: 900;
-	text-align: center;
+	font-size: 2em;
+	font-weight: 600;
+	text-align: left;
 	background: white;
 }
 
@@ -123,15 +123,34 @@ h3 {
 	margin: 10px;
 	line-height: 1;
 	transition: 0.2s;
+	display: flex;
+	justify-content: center;
 }
 
 .tajuk-isi-jawi {
 	font-family: 'Reem Kufi', 'Segoe UI', 'IBM Plex Sans Arabic', 'Al Bayan', 'Ebrima', sans-serif;
 	font-size: 1.2em;
+	font-weight: 100;
+}
+
+.tajuk-sub {
+	display:flex;
+	align-content: center;
+}
+
+.tajuk-kotak {
+	align-self: center;
+}
+
+.tajuk-tajuk {
+	align-self: center;
+	padding-left: 15px;
 }
 
 .tajuk-kecil {
 	font-size: 0.45em;
+	text-align: center;
+	font-weight: 800;
 }
 
 .modul {
@@ -487,12 +506,14 @@ h3 {
 	body {
 		padding-left: 0px;
 		padding-right: 0px;
+		padding-top: 0px;
 		margin-left: 0px;
 		margin-right: 0px;
+		margin-top: 0px;
 	}
 	
 	.halimunan-ketika-atasmeja {
-		display:unset;
+		display:block;
 	}
 	
 	.halimunan-ketika-mudahalih {
@@ -530,7 +551,16 @@ h3 {
 		margin: 1%;
 	}
 	
-	.kepala-dalamtalian {
+	.padding-tambah {
+		padding-top: 74px;
+	}
+	
+	.بطلtajuk-sub {
+		flex-direction: column;
+		text-align: center;
+	}
+	
+	.بطلkepala-dalamtalian {
 		position: fixed;
 		top: 0;
 		left: 0;
@@ -543,7 +573,7 @@ h3 {
 		text-align: left;
 	}
 	
-	.kepala-dalamtalian-sub {
+	.بطلkepala-dalamtalian-sub {
 		margin: auto;
 		max-width: 381px;
 		display: flex;
@@ -551,15 +581,15 @@ h3 {
 		justify-content: space-between;
 	}
 	
-	.kepala-dalamtalian-gambar {
+	.بطلkepala-dalamtalian-gambar {
 		width: 70px;
 	}
 	
-	.kepala-dalamtalian-kotak {
+	.بطلkepala-dalamtalian-kotak {
 		width: 70px;
 	}
 	
-	.kepala-dalamtalian-tajuk {
+	.بطلkepala-dalamtalian-tajuk {
 		width: calc(100% - 80px);
 		padding-left: 8px;
 	}
@@ -679,4 +709,32 @@ h3 {
 .keterangan-butang:hover {
 	background:#0675c4;
 	transform:scale(1.15)
+}
+
+.apung-isi {
+	max-width: 800px;
+	margin: auto;
+	display: flex;
+	align-content: center;
+}
+
+.nyahapung {
+	position: fixed;
+	top: -100px;
+	left: 0;
+	background: rgba(255,255,255,0.9);
+	padding:10px;
+	width: 100%;
+	transition: 0.3s;
+}
+
+.apung {
+	position: fixed;
+	top: -100px;
+	left: 0;
+	background: rgba(255,255,255,0.9);
+	padding:10px;
+	width: 100%;
+	top: 0;
+	transition: 0.3s;
 }
