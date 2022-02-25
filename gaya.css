@@ -534,9 +534,9 @@ h3 {
 	.menu-anak {
 		min-height: 100px;
 		width: 100%;
-		padding-top:0px;
-		padding-bottom:0px;
-		font-size:1.8em;
+		padding-top: 0px;
+		padding-bottom: 0px;
+		font-size: 1.8em;
 		display: flex;
 		align-items: center;
 	}
@@ -545,10 +545,29 @@ h3 {
 		margin-left:15px;
 	}
 	
-
 	.keputusan {
 		width: 48%;
 		margin: 1%;
+		padding: 10px 0px;
+	}
+	
+	.keputusan-anak-logo-gambar {
+		width: 100px !important
+	}
+	
+	.keputusan-anak-nama {
+		line-height: 1;
+		font-size: 0.8em;
+		font-weight: 600;
+	}
+	
+	.keputusan-anak-kerusi-angka {
+		line-height: 1;
+		font-size: 3.5em;
+	}
+	
+	.keputusan-anak-kerusi-tulis {
+		display: none;
 	}
 	
 	.padding-tambah {
