@@ -827,49 +827,115 @@
 					<div class="keputusan-anak-logo"><img src="./aset/parti/k-bn.SVG" style="width: 150px;" class="keputusan-anak-logo-gambar"></div>
 					<div class="keputusan-anak-nama">Barisan Nasional</br>باريسن ناسيونل</div>
 					<div class="keputusan-anak-kerusi">
-						<div class="keputusan-anak-kerusi-angka">0</div>
+						<div id="keputusan-bn" class="keputusan-anak-kerusi-angka">0</div>
 						<div class="keputusan-anak-kerusi-tulis">kerusi/کروسي</div>
 					</div>
 				</div>
+				<script type="text/javascript">
+					if(typeof(EventSource)!=="undefined") {
+						var eSumber = new EventSource("keputusan-bn.php");
+						eSumber.onmessage = function(event) {
+							document.getElementById("keputusan-bn").innerHTML = event.data;
+						};
+					}
+					else {
+						document.getElementById("keputusan-bn").innerHTML="X";
+					}
+				</script>
 				<div class="keputusan latar-ph">
 					<div class="keputusan-anak-logo"><img src="./aset/parti/k-ph.SVG" style="width: 150px;" class="keputusan-anak-logo-gambar"></div>
 					<div class="keputusan-anak-nama">Pakatan Harapan +</br>+ ڤاکتن هارڤن</div>
 					<div class="keputusan-anak-kerusi">
-						<div class="keputusan-anak-kerusi-angka">0</div>
+						<div id="keputusan-ph" class="keputusan-anak-kerusi-angka">0</div>
 						<div class="keputusan-anak-kerusi-tulis">kerusi/کروسي</div>
 					</div>
 				</div>
+				<script type="text/javascript">
+					if(typeof(EventSource)!=="undefined") {
+						var eSumber = new EventSource("keputusan-ph.php");
+						eSumber.onmessage = function(event) {
+							document.getElementById("keputusan-pn").innerHTML = event.data;
+						};
+					}
+					else {
+						document.getElementById("keputusan-pn").innerHTML="X";
+					}
+				</script>
 				<div class="keputusan latar-pn">
 					<div class="keputusan-anak-logo"><img src="./aset/parti/k-pn.SVG" style="width: 150px;" class="keputusan-anak-logo-gambar"></div>
 					<div class="keputusan-anak-nama">Perikatan Nasional</br>ڤرايکتن ناسيونل</div>
 					<div class="keputusan-anak-kerusi">
-						<div class="keputusan-anak-kerusi-angka">0</div>
+						<div id="keputusan-pn" class="keputusan-anak-kerusi-angka">0</div>
 						<div class="keputusan-anak-kerusi-tulis">kerusi/کروسي</div>
 					</div>
 				</div>
+				<script type="text/javascript">
+					if(typeof(EventSource)!=="undefined") {
+						var eSumber = new EventSource("keputusan-pn.php");
+						eSumber.onmessage = function(event) {
+							document.getElementById("keputusan-").innerHTML = event.data;
+						};
+					}
+					else {
+						document.getElementById("keputusan-pn").innerHTML="X";
+					}
+				</script>
 				<div class="keputusan latar-pj">
 					<div class="keputusan-anak-logo"><img src="./aset/parti/k-pj.SVG" style="width: 150px;" class="keputusan-anak-logo-gambar"></div>
 					<div class="keputusan-anak-nama">Parti Pejuang</br>ڤرتي ڤجواڠ</div>
 					<div class="keputusan-anak-kerusi">
-						<div class="keputusan-anak-kerusi-angka">0</div>
+						<div id="keputusan-pj" class="keputusan-anak-kerusi-angka">0</div>
 						<div class="keputusan-anak-kerusi-tulis">kerusi/کروسي</div>
 					</div>
 				</div>
+				<script type="text/javascript">
+					if(typeof(EventSource)!=="undefined") {
+						var eSumber = new EventSource("keputusan-pj.php");
+						eSumber.onmessage = function(event) {
+							document.getElementById("keputusan-pj").innerHTML = event.data;
+						};
+					}
+					else {
+						document.getElementById("keputusan-pj").innerHTML="X";
+					}
+				</script>
 				<div class="keputusan latar-wr">
 					<div class="keputusan-anak-logo"><img src="./aset/parti/k-wr.SVG" style="width: 150px;" class="keputusan-anak-logo-gambar"></div>
 					<div class="keputusan-anak-nama">Parti Warisan</br>ڤرتي واريثن</div>
 					<div class="keputusan-anak-kerusi">
-						<div class="keputusan-anak-kerusi-angka">0</div>
+						<div id="keputusan-wr" class="keputusan-anak-kerusi-angka">0</div>
 						<div class="keputusan-anak-kerusi-tulis">kerusi/کروسي</div>
 					</div>
 				</div>
+				<script type="text/javascript">
+					if(typeof(EventSource)!=="undefined") {
+						var eSumber = new EventSource("keputusan-wr.php");
+						eSumber.onmessage = function(event) {
+							document.getElementById("keputusan-wr").innerHTML = event.data;
+						};
+					}
+					else {
+						document.getElementById("keputusan-wr").innerHTML="X";
+					}
+				</script>
 				<div class="keputusan latar-bl">
 					<div class="keputusan-anak-logo"><img src="./aset/parti/k-bl.SVG" style="width: 150px;" class="keputusan-anak-logo-gambar"></div>
 					<div class="keputusan-anak-nama">Lain-lain</br>لا<span style="bottom:5px;position:relative;">ء</span>ين٢</div>
 					<div class="keputusan-anak-kerusi">
-						<div class="keputusan-anak-kerusi-angka">0</div>
+						<div id="keputusan-bl" class="keputusan-anak-kerusi-angka">0</div>
 						<div class="keputusan-anak-kerusi-tulis">kerusi/کروسي</div>
 					</div>
+				<script type="text/javascript">
+					if(typeof(EventSource)!=="undefined") {
+						var eSumber = new EventSource("keputusan-bl.php");
+						eSumber.onmessage = function(event) {
+							document.getElementById("keputusan-bl").innerHTML = event.data;
+						};
+					}
+					else {
+						document.getElementById("keputusan-bl").innerHTML="X";
+					}
+				</script>
 				</div>
 			</div>
 			<a href="javascript:location.reload(true)" style="color:white; text-decoration:none;"><div class="butang-segarsemula">Segar semula halaman<br/>سݢر سمولا هلمن
