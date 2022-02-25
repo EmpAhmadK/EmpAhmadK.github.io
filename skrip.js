@@ -5,7 +5,7 @@
 window.onscroll = function() {scrollFunction()};
 
 function scrollFunction() {
-  if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
+  if (document.body.scrollTop > 170 || document.documentElement.scrollTop > 170) {
     /* document.getElementById("melekat").classList.add("lekat");
     document.getElementById("melekat-dalam").classList.add("lekat-sub");
     document.getElementById("melekat-gambar").classList.add("lekat-gambar");
