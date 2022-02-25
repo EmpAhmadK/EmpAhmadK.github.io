@@ -99,7 +99,6 @@ h3 {
 /* GAYA */
 
 .badan {
-	border-radius: 5px;
 }
 
 .utama {
@@ -484,6 +483,13 @@ h3 {
 }
 
 @media screen and (max-width: 800px) {
+
+	body {
+		padding-left: 0px;
+		padding-right: 0px;
+		margin-left: 0px;
+		margin-right: 0px;
+	}
 	
 	.halimunan-ketika-atasmeja {
 		display:unset;
