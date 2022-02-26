@@ -1193,7 +1193,7 @@
 		</div>
 	</div>
 				<!--- KETERANGAN / کترڠن --->
-	<div onclick="fungsiKembali()" id="kembali-butang" class="kembali-butang">↑</div>
+	<div onclick="fungsiKembali()" id="kembali-butang" class="kembali-butang-sorok">^</div>
 	<script>
 	var kembali = document.getElementById("kembali-butang");
 	
@@ -1201,9 +1201,11 @@
 	
 	function fungsiTatal() {
 	if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-		mybutton.style.display = "block";
+		kembali.classList.remove("kembali-butang-sorok");
+		kembali.classList.add("kembali-butang");
 	} else {
-		mybutton.style.display = "none";
+		kembali.classList.add("kembali-butang-sorok");
+		kembali.classList.remove("kembali-butang");
 	}
 	}
 	
