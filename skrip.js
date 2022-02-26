@@ -23,17 +23,3 @@ function scrollFunction() {
     document.getElementById("pengepala-terapung").classList.remove("apung");
   }
 }
-
-// Kemas modul tulisan
-
-function loadFunction() {
-	var iframe = document.getElementById("tulisanTerpaut");
-	var elmnta = iframe.contentWindow.document.getElementById("masthead");
-	var elmntb = iframe.contentWindow.document.getElementById("wpadminbar");
-	var elmntc = iframe.contentWindow.document.getElementsByTagName("body");
-	var elmntd = iframe.contentWindow.document.getElementsByClassName("page-header");
-	elmnta.style.display = "none";
-	elmntb.style.display = "none";
-	elmntc.style.background = "none";
-	elmntd.style.display = "none";
-}
