@@ -1197,18 +1197,6 @@
 	<script>
 	var kembali = document.getElementById("kembali-butang");
 	
-	window.onscroll = function() {fungsiTatal()};
-	
-	function fungsiTatal() {
-	if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-		kembali.classList.remove("kembali-butang-sorok");
-		kembali.classList.add("kembali-butang");
-	} else {
-		kembali.classList.add("kembali-butang-sorok");
-		kembali.classList.remove("kembali-butang");
-	}
-	}
-	
 	function fungsiKembali() {
 	document.body.scrollTop = 0;
 	document.documentElement.scrollTop = 0;

@@ -12,7 +12,10 @@ function scrollFunction() {
     document.getElementById("melekat-kotak").classList.add("lekat-kotak");
     document.getElementById("melekat-tajuk").classList.add("lekat-tajuk");
     document.getElementById("subtajuk").classList.add("subtajuk-pemanjangan"); */
+    document.getElementById("pengepala-terapung").classList.remove("nyahapung");
     document.getElementById("pengepala-terapung").classList.add("apung");
+	document.getElementById("kembali-butang").classList.remove("kembali-butang-sorok");
+	document.getElementById("kembali-butang").classList.add("kembali-butang");
   } else {
     /* document.getElementById("melekat").classList.remove("lekat");
     document.getElementById("melekat-dalam").classList.remove("lekat-sub");
@@ -21,6 +24,9 @@ function scrollFunction() {
     document.getElementById("melekat-tajuk").classList.remove("lekat-tajuk");
     document.getElementById("subtajuk").classList.remove("subtajuk-pemanjangan"); */
     document.getElementById("pengepala-terapung").classList.remove("apung");
+    document.getElementById("pengepala-terapung").classList.add("nyahapung");
+	document.getElementById("kembali-butang").classList.add("kembali-butang-sorok");
+	document.getElementById("kembali-butang").classList.remove("kembali-butang");
   }
 }
 
