@@ -1,1 +1,1 @@
-<span>PN</span>
+<span>0</span>
