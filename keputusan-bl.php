@@ -3,7 +3,7 @@
 header('Content-Type: application/json');
 
 $data = [
-	'keputusanBL' => 00
+	'keputusanBL' => (time() % 10000) * 3
 ];
 
 echo json_encode($data);
