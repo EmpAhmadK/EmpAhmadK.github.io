@@ -1094,7 +1094,7 @@
 					</div>
 				</div>
 				<script type="text/javascript">
-					/*setInterval(keputusanBN, 1000);
+					setInterval(keputusanBN, 30000);
 					 
 					function keputusanBN() {
 						var xhttp = new XMLHttpRequest();
@@ -1105,7 +1105,12 @@
 						};
 						xhttp.open("GET", "./keputusan/keputusan-bn.txt", true);
 						xhttp.send();
-					}*/
+					}
+					
+					document.addEventListener('DOMContentLoaded', function () {
+						keputusanBN();
+						console.log("-Mula");
+					});
 				</script>
 				<div class="keputusan latar-ph">
 					<div class="keputusan-anak-logo"><img src="./aset/parti/k-ph.SVG" style="width: 150px;" class="keputusan-anak-logo-gambar"></div>
@@ -1116,7 +1121,7 @@
 					</div>
 				</div>
 				<script type="text/javascript">
-					/*setInterval(keputusanPH, 1000);
+					setInterval(keputusanPH, 30000);
 					 
 					function keputusanPH() {
 						var xhttp = new XMLHttpRequest();
@@ -1127,7 +1132,12 @@
 						};
 						xhttp.open("GET", "./keputusan/keputusan-ph.txt", true);
 						xhttp.send();
-					}*/
+					}
+					
+					document.addEventListener('DOMContentLoaded', function () {
+						keputusanPH();
+						console.log("-Mula");
+					});
 				</script>
 				<div class="keputusan latar-pn">
 					<div class="keputusan-anak-logo"><img src="./aset/parti/k-pn.SVG" style="width: 150px;" class="keputusan-anak-logo-gambar"></div>
@@ -1138,7 +1148,7 @@
 					</div>
 				</div>
 				<script type="text/javascript">
-					 /*setInterval(keputusanPN, 1000);
+					setInterval(keputusanPN, 30000);
 					 
 					function keputusanPN() {
 						var xhttp = new XMLHttpRequest();
@@ -1149,7 +1159,12 @@
 						};
 						xhttp.open("GET", "./keputusan/keputusan-pn.txt", true);
 						xhttp.send();
-					}*/
+					}
+					
+					document.addEventListener('DOMContentLoaded', function () {
+						keputusanPN();
+						console.log("-Mula");
+					});
 				</script>
 				<div class="keputusan latar-pj">
 					<div class="keputusan-anak-logo"><img src="./aset/parti/k-pj.SVG" style="width: 150px;" class="keputusan-anak-logo-gambar"></div>
@@ -1160,7 +1175,7 @@
 					</div>
 				</div>
 				<script type="text/javascript">
-					 /*setInterval(keputusanPJ, 1000);
+					setInterval(keputusanPJ, 30000);
 					 
 					function keputusanPJ() {
 						var xhttp = new XMLHttpRequest();
@@ -1171,7 +1186,12 @@
 						};
 						xhttp.open("GET", "./keputusan/keputusan-pj.txt", true);
 						xhttp.send();
-					}*/
+					}
+					
+					document.addEventListener('DOMContentLoaded', function () {
+						keputusanPJ();
+						console.log("-Mula");
+					});
 				</script>
 				<div class="keputusan latar-wr">
 					<div class="keputusan-anak-logo"><img src="./aset/parti/k-wr.SVG" style="width: 150px;" class="keputusan-anak-logo-gambar"></div>
@@ -1182,8 +1202,8 @@
 					</div>
 				</div>
 				<script type="text/javascript">
-					 /*setInterval(keputusanWR, 1000);
-					 
+					setInterval(keputusanWR, 30000);
+					
 					function keputusanWR() {
 						var xhttp = new XMLHttpRequest();
 						xhttp.onreadystatechange = function() {
@@ -1193,7 +1213,12 @@
 						};
 						xhttp.open("GET", "./keputusan/keputusan-wr.txt", true);
 						xhttp.send();
-					}*/
+					}
+					
+					document.addEventListener('DOMContentLoaded', function () {
+						keputusanWR();
+						console.log("WR-Mula");
+					});
 				</script>
 				<div class="keputusan latar-bl">
 					<div class="keputusan-anak-logo"><img src="./aset/parti/k-bl.SVG" style="width: 150px;" class="keputusan-anak-logo-gambar"></div>
@@ -1203,8 +1228,25 @@
 						<div class="keputusan-anak-kerusi-tulis">kerusi/کروسي</div>
 					</div>
 				<script>
+					setInterval(keputusanBL, 30000);
+					
+					function keputusanBL() {
+						var xhttp = new XMLHttpRequest();
+						xhttp.onreadystatechange = function() {
+							if (this.readyState == 4 && this.status == 200) {
+								document.getElementById("keputusan-bl").innerHTML = this.responseText;
+							}
+						};
+						xhttp.open("GET", "./keputusan/keputusan-bl.txt", true);
+						xhttp.send();
+					}
+					
+					document.addEventListener('DOMContentLoaded', function () {
+						keputusanBL();
+						console.log("BL-Mula");
+					});
 				
-					function mulaKemasKini () {
+					/*function mulaKemasKini () {
 						const angkaBL = document.getElementById('keputusan-bl');
 						
 						setInterval(function () {
@@ -1223,7 +1265,7 @@
 					document.addEventListener('DOMContentLoaded', function () {
 						mulaKemasKini();
 						console.log("Mula");
-					});
+					});*/
 				</script>
 				</div>
 			</div>
