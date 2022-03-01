@@ -1094,7 +1094,7 @@
 					</div>
 				</div>
 				<script type="text/javascript">
-					 setInterval(keputusanBN, 1000);
+					/*setInterval(keputusanBN, 1000);
 					 
 					function keputusanBN() {
 						var xhttp = new XMLHttpRequest();
@@ -1105,7 +1105,7 @@
 						};
 						xhttp.open("GET", "./keputusan/keputusan-bn.txt", true);
 						xhttp.send();
-					}
+					}*/
 				</script>
 				<div class="keputusan latar-ph">
 					<div class="keputusan-anak-logo"><img src="./aset/parti/k-ph.SVG" style="width: 150px;" class="keputusan-anak-logo-gambar"></div>
@@ -1116,7 +1116,7 @@
 					</div>
 				</div>
 				<script type="text/javascript">
-					 setInterval(keputusanPH, 1000);
+					/*setInterval(keputusanPH, 1000);
 					 
 					function keputusanPH() {
 						var xhttp = new XMLHttpRequest();
@@ -1127,7 +1127,7 @@
 						};
 						xhttp.open("GET", "./keputusan/keputusan-ph.txt", true);
 						xhttp.send();
-					}
+					}*/
 				</script>
 				<div class="keputusan latar-pn">
 					<div class="keputusan-anak-logo"><img src="./aset/parti/k-pn.SVG" style="width: 150px;" class="keputusan-anak-logo-gambar"></div>
@@ -1138,7 +1138,7 @@
 					</div>
 				</div>
 				<script type="text/javascript">
-					 setInterval(keputusanPN, 1000);
+					 /*setInterval(keputusanPN, 1000);
 					 
 					function keputusanPN() {
 						var xhttp = new XMLHttpRequest();
@@ -1149,7 +1149,7 @@
 						};
 						xhttp.open("GET", "./keputusan/keputusan-pn.txt", true);
 						xhttp.send();
-					}
+					}*/
 				</script>
 				<div class="keputusan latar-pj">
 					<div class="keputusan-anak-logo"><img src="./aset/parti/k-pj.SVG" style="width: 150px;" class="keputusan-anak-logo-gambar"></div>
@@ -1160,7 +1160,7 @@
 					</div>
 				</div>
 				<script type="text/javascript">
-					 setInterval(keputusanPJ, 1000);
+					 /*setInterval(keputusanPJ, 1000);
 					 
 					function keputusanPJ() {
 						var xhttp = new XMLHttpRequest();
@@ -1171,7 +1171,7 @@
 						};
 						xhttp.open("GET", "./keputusan/keputusan-pj.txt", true);
 						xhttp.send();
-					}
+					}*/
 				</script>
 				<div class="keputusan latar-wr">
 					<div class="keputusan-anak-logo"><img src="./aset/parti/k-wr.SVG" style="width: 150px;" class="keputusan-anak-logo-gambar"></div>
@@ -1182,7 +1182,7 @@
 					</div>
 				</div>
 				<script type="text/javascript">
-					 setInterval(keputusanWR, 1000);
+					 /*setInterval(keputusanWR, 1000);
 					 
 					function keputusanWR() {
 						var xhttp = new XMLHttpRequest();
@@ -1193,7 +1193,7 @@
 						};
 						xhttp.open("GET", "./keputusan/keputusan-wr.txt", true);
 						xhttp.send();
-					}
+					}*/
 				</script>
 				<div class="keputusan latar-bl">
 					<div class="keputusan-anak-logo"><img src="./aset/parti/k-bl.SVG" style="width: 150px;" class="keputusan-anak-logo-gambar"></div>
@@ -1202,19 +1202,27 @@
 						<div id="keputusan-bl" class="keputusan-anak-kerusi-angka">0</div>
 						<div class="keputusan-anak-kerusi-tulis">kerusi/کروسي</div>
 					</div>
-				<script type="text/javascript">
-					 setInterval(keputusanBL, 1000);
-					 
-					function keputusanBL() {
-						var xhttp = new XMLHttpRequest();
-						xhttp.onreadystatechange = function() {
-							if (this.readyState == 4 && this.status == 200) {
-								document.getElementById("keputusan-bl").innerHTML = this.responseText;
-							}
-						};
-						xhttp.open("GET", "./keputusan/keputusan-bl.txt", true);
-						xhttp.send();
+				<script>
+				
+					function mulaKemasKini () {
+						const angkaBL = document.getElementById('keputusan-bl');
+						
+						setInterval(function () {
+							fetch('keputusan-bl.php').then(function (response) {
+								return response.json();
+							}).then(function (data) {
+								angkaBL.textContent = data.keputusanBL;
+								console.log("Berjaya");
+							}).catch(function (error) {
+								console.log(error);
+							});
+						}, 2000);
 					}
+					
+					document.addEventListener('DOMContentLoaded', function () {
+						mulaKemasKini();
+						console.log("Mula");
+					});
 				</script>
 				</div>
 			</div>
