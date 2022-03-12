@@ -73,6 +73,37 @@
 			<h2>⋅ ⋅ ⋅</h2>
 				<!---- MAKLUMAT PENGUNDI / معلومت ڤڠوندي ---->
 			<h2 id="maklumat">Maklumat Pengundi / معلومت ڤڠوندي</h2>
+			<h3>Peratusan keluar mengundi / ڤراتوسن کلوار مڠوندي</h3>
+				<div class="modul">
+					<canvas id="cartaUndi" style="width:100%;height:500px"></canvas>
+						<script>
+							var xValues = ["Belum Mengundi", "Sudah Mengundi"];
+							var yValues = [2574835, 0];
+							var barColors = [
+							  "#25295D",
+							  "#BF1E24"
+							];
+
+							new Chart("cartaUndi", {
+							  type: "pie",
+							  data: {
+							    labels: xValues,
+							    datasets: [{
+							      backgroundColor: barColors,
+							      data: yValues
+							    }]
+							  },
+							  options: {
+							    title: {
+							      display: false
+							    }
+							  }
+							});
+						</script>
+					<div class="sumber">
+						sumber: Suruhanjaya Pilihan Raya | setakat jam 8.00 pagi
+					</div>
+				</div>
 			<h3>Jenis-jenis Pengundi / جنيس٢ ڤڠوندي</h3>
 				<div class="modul">
 					<div class="fleks">
@@ -1074,10 +1105,6 @@
 				</div>
 			</div>
 			<h2>⋅ ⋅ ⋅</h2>
-					<!---- TULISAN TERKINI / توليسن ترکيني ---->
-			<h2>Tulisan Terkini / توليسن ترکيني</h2>
-			<iframe class="benaman-tulisan" style="width: 100%;" src="https://ahmadalikarim.wordpress.com/tag/prn-johor"></iframe>
-			<h2>⋅ ⋅ ⋅</h2>
 				<!---- KEPUTUSAN PILIHAN RAYA / کڤوتوسن ڤيليهن راي ---->
 			<h2 id="keputusan">Keputusan Pilihan Raya / کڤوتوسن ڤيليهن راي</h2>
 			<div class="modul latar-bl" style="text-align: center; border-radius: 10px; padding: 25px; font-size: 1.1em; color: white;">
@@ -1271,6 +1298,10 @@
 			</div>
 			<a href="javascript:location.reload(true)" style="color:white; text-decoration:none;"><div class="butang-segarsemula">Segar semula halaman<br/>سݢر سمولا هلمن
 			</div></a>
+			<h2>⋅ ⋅ ⋅</h2>
+					<!---- TULISAN TERKINI / توليسن ترکيني ---->
+			<h2>Tulisan Terkini / توليسن ترکيني</h2>
+			<iframe class="benaman-tulisan" style="width: 100%;" src="https://ahmadalikarim.wordpress.com/tag/prn-johor"></iframe>
 		</div>
 		<div class="pembawah">
 			<p>Pusat Maklumat PRN Johor</p>
