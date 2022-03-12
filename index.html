@@ -261,140 +261,6 @@
 				⋅ ⋅ ⋅ FAQ PRN Johor ⋅ ⋅ ⋅
 			</div></a>
 			<h2>⋅ ⋅ ⋅</h2>
-				<!---- MAKLUMAT PENGUNDI / معلومت ڤڠوندي ---->
-			<h2 id="maklumat">Maklumat Pengundi / معلومت ڤڠوندي</h2>
-			<h3>Peratusan keluar mengundi / ڤراتوسن کلوار مڠوندي</h3>
-				<div class="modul">
-					<canvas id="cartaUndi" style="width:100%;height:500px"></canvas>
-						<script>
-							var xValues = ["Sudah Mengundi", "Belum Mengundi"];
-							var yValues = [50,50];
-							var barColors = [
-							  "#BF1E24",
-							  "#25295D"
-							];
-
-							new Chart("cartaUndi", {
-							  type: "pie",
-							  data: {
-							    labels: xValues,
-							    datasets: [{
-							      backgroundColor: barColors,
-							      data: yValues
-							    }]
-							  },
-							  options: {
-							    title: {
-							      display: false
-							    }
-							  }
-							});
-						</script>
-					<div class="sumber">
-						sumber: Suruhanjaya Pilihan Raya | setakat jam 4.00 petang
-					</div>
-				</div>
-			<h3>Jenis-jenis Pengundi / جنيس٢ ڤڠوندي</h3>
-				<div class="modul">
-					<div class="fleks">
-						<div class="fleks-isi-50 jidar-tegak-tengah" style="background: #BF1E24; color: white;">
-							<div class="jadual-tajuk">2,574,835</div>
-							<div class="jadual-isi">pengundi biasa</div>
-							<div class="jadual-isi">ڤڠوندي بياسا</div>
-						</div>
-						<div class="fleks-isi-50 jidar-tegak-tengah" style="background: #25295D; color: white;">
-							<div class="jadual-tajuk">11,576</div>
-							<div class="jadual-isi">pengundi awal (polis  & pasangan)</div>
-							<div class="jadual-isi">ڤڠوندي اول (ڤوليس & ڤاسڠن)</div>
-						</div>
-					</div>
-					<div class="fleks">
-						<div class="fleks-isi-50 jidar-tegak-tengah" style="background: #35430d; color: white;">
-							<div class="jadual-tajuk">10,955</div>
-							<div class="jadual-isi">pengundi awal (tentera & pasangan)</div>
-							<div class="jadual-isi">ڤڠوندي اول (تنترا & ڤاسڠن)</div>
-						</div>
-						<div class="fleks-isi-50 jidar-tegak-tengah" style="background: #8c7600; color: white;">
-							<div class="jadual-tajuk">376</div>
-							<div class="jadual-isi">pengundi pos</div>
-							<div class="jadual-isi">ڤڠوندي ڤوس</div>
-						</div>
-					</div>
-					<div class="fleks">
-						<div class="fleks-isi-100 jidar-tegak-tengah" style="background: #FFF; color: #25295D;">
-							<div class="jadual-tajuk">2,597,742</div>
-							<div class="jadual-isi">jumlah pengundi</div>
-							<div class="jadual-isi">جومله ڤڠوندي</div>
-						</div>
-					</div>
-					<div class="sumber">
-						sumber: Suruhanjaya Pilihan Raya
-					</div>
-				</div>
-			<h3>Umur Pengundi / عمور ڤڠوندي</h3>
-				<div class="modul">
-					<canvas id="cartaUmur" style="width:100%;height:500px"></canvas>
-						<script>
-							var xValues = ["18-20", "21-29", "30-39", "40-49", "50-59", "60-69", "70-79", "80-89", "90+"];
-							var yValues = [173177, 567768, 560744, 453732, 379692, 276075, 131557, 45573, 9424];
-							var barColors = ["#BF1E24", "#25295D","#BF1E24","#25295D","#BF1E24","#25295D","#BF1E24","#25295D","#BF1E24"];
-							
-							new Chart("cartaUmur", {
-  							type: "horizontalBar",
-  							data: {
-  							labels: xValues,
-  							datasets: [{
-    							backgroundColor: barColors,
-    							data: yValues
-  							}]
-							},
-  							options: {
-    							legend: {display: false},
-    							title: {
-      							display: true,
-    							},
-    							scales: {
-      							xAxes: [{ticks: {min: 0, max:600000}}]
-    							}
-  							}
-							});
-						</script>
-					<div class="sumber">
-						sumber: Suruhanjaya Pilihan Raya
-					</div>
-				</div>
-			<h3>Jantina Pengundi / جنتينا ڤڠوندي</h3>
-				<div class="modul">
-					<canvas id="cartaJantina" style="width:100%;height:350px">Pelayar anda tidak menyokong ciri-ciri HTML5. Sila hubungi pihak pengendali di fb.me/ahmadalikarimofficial<br/>ڤلاير اندا تيدق مڽوکوڠ چيري٢ HTML5. سيلا هوبوڠي ڤيهق ڤڠندالي دfb.me/ahmadalikarimofficial</canvas>
-						<script>
-							var xValues = ["Lelaki / للاکي", "Wanita / وانيتا"];
-							var yValues = [1300923, 1296819];
-							var barColors = [
-								"#02aff3",
-								"#ff00ff"
-							];
-							
-							new Chart("cartaJantina", {
-								type: "doughnut",
-								data: {
-									labels: xValues,
-									datasets: [{
-									backgroundColor: barColors,
-									data: yValues
-									}]
-								},
-								options: {
-									title: {
-									display: false,
-									}
-								}
-							});
-						</script>
-					<div class="sumber">
-						sumber: Suruhanjaya Pilihan Raya
-					</div>
-				</div>
-			<h2>⋅ ⋅ ⋅</h2>
 				<!---- SENARAI KAWASAN / سناراي کاوسن ---->
 			<h2 id="senarai">Senarai Kawasan / سناراي کاوسن</h2>
 			<div class="halimunan-ketika-atasmeja kebawah" style="margin: auto; width: 100%; text-align: center;">
@@ -1294,6 +1160,140 @@
 					<p>2018: Md Othman Yusof (BN-UMNO) - Maj: 862</p>
 				</div>
 			</div>
+			<h2>⋅ ⋅ ⋅</h2>
+				<!---- MAKLUMAT PENGUNDI / معلومت ڤڠوندي ---->
+			<h2 id="maklumat">Maklumat Pengundi / معلومت ڤڠوندي</h2>
+			<h3>Peratusan keluar mengundi / ڤراتوسن کلوار مڠوندي</h3>
+				<div class="modul">
+					<canvas id="cartaUndi" style="width:100%;height:500px"></canvas>
+						<script>
+							var xValues = ["Sudah Mengundi", "Belum Mengundi"];
+							var yValues = [50,50];
+							var barColors = [
+							  "#BF1E24",
+							  "#25295D"
+							];
+
+							new Chart("cartaUndi", {
+							  type: "pie",
+							  data: {
+							    labels: xValues,
+							    datasets: [{
+							      backgroundColor: barColors,
+							      data: yValues
+							    }]
+							  },
+							  options: {
+							    title: {
+							      display: false
+							    }
+							  }
+							});
+						</script>
+					<div class="sumber">
+						sumber: Suruhanjaya Pilihan Raya | setakat jam 4.00 petang
+					</div>
+				</div>
+			<h3>Jenis-jenis Pengundi / جنيس٢ ڤڠوندي</h3>
+				<div class="modul">
+					<div class="fleks">
+						<div class="fleks-isi-50 jidar-tegak-tengah" style="background: #BF1E24; color: white;">
+							<div class="jadual-tajuk">2,574,835</div>
+							<div class="jadual-isi">pengundi biasa</div>
+							<div class="jadual-isi">ڤڠوندي بياسا</div>
+						</div>
+						<div class="fleks-isi-50 jidar-tegak-tengah" style="background: #25295D; color: white;">
+							<div class="jadual-tajuk">11,576</div>
+							<div class="jadual-isi">pengundi awal (polis  & pasangan)</div>
+							<div class="jadual-isi">ڤڠوندي اول (ڤوليس & ڤاسڠن)</div>
+						</div>
+					</div>
+					<div class="fleks">
+						<div class="fleks-isi-50 jidar-tegak-tengah" style="background: #35430d; color: white;">
+							<div class="jadual-tajuk">10,955</div>
+							<div class="jadual-isi">pengundi awal (tentera & pasangan)</div>
+							<div class="jadual-isi">ڤڠوندي اول (تنترا & ڤاسڠن)</div>
+						</div>
+						<div class="fleks-isi-50 jidar-tegak-tengah" style="background: #8c7600; color: white;">
+							<div class="jadual-tajuk">376</div>
+							<div class="jadual-isi">pengundi pos</div>
+							<div class="jadual-isi">ڤڠوندي ڤوس</div>
+						</div>
+					</div>
+					<div class="fleks">
+						<div class="fleks-isi-100 jidar-tegak-tengah" style="background: #FFF; color: #25295D;">
+							<div class="jadual-tajuk">2,597,742</div>
+							<div class="jadual-isi">jumlah pengundi</div>
+							<div class="jadual-isi">جومله ڤڠوندي</div>
+						</div>
+					</div>
+					<div class="sumber">
+						sumber: Suruhanjaya Pilihan Raya
+					</div>
+				</div>
+			<h3>Umur Pengundi / عمور ڤڠوندي</h3>
+				<div class="modul">
+					<canvas id="cartaUmur" style="width:100%;height:500px"></canvas>
+						<script>
+							var xValues = ["18-20", "21-29", "30-39", "40-49", "50-59", "60-69", "70-79", "80-89", "90+"];
+							var yValues = [173177, 567768, 560744, 453732, 379692, 276075, 131557, 45573, 9424];
+							var barColors = ["#BF1E24", "#25295D","#BF1E24","#25295D","#BF1E24","#25295D","#BF1E24","#25295D","#BF1E24"];
+							
+							new Chart("cartaUmur", {
+  							type: "horizontalBar",
+  							data: {
+  							labels: xValues,
+  							datasets: [{
+    							backgroundColor: barColors,
+    							data: yValues
+  							}]
+							},
+  							options: {
+    							legend: {display: false},
+    							title: {
+      							display: true,
+    							},
+    							scales: {
+      							xAxes: [{ticks: {min: 0, max:600000}}]
+    							}
+  							}
+							});
+						</script>
+					<div class="sumber">
+						sumber: Suruhanjaya Pilihan Raya
+					</div>
+				</div>
+			<h3>Jantina Pengundi / جنتينا ڤڠوندي</h3>
+				<div class="modul">
+					<canvas id="cartaJantina" style="width:100%;height:350px">Pelayar anda tidak menyokong ciri-ciri HTML5. Sila hubungi pihak pengendali di fb.me/ahmadalikarimofficial<br/>ڤلاير اندا تيدق مڽوکوڠ چيري٢ HTML5. سيلا هوبوڠي ڤيهق ڤڠندالي دfb.me/ahmadalikarimofficial</canvas>
+						<script>
+							var xValues = ["Lelaki / للاکي", "Wanita / وانيتا"];
+							var yValues = [1300923, 1296819];
+							var barColors = [
+								"#02aff3",
+								"#ff00ff"
+							];
+							
+							new Chart("cartaJantina", {
+								type: "doughnut",
+								data: {
+									labels: xValues,
+									datasets: [{
+									backgroundColor: barColors,
+									data: yValues
+									}]
+								},
+								options: {
+									title: {
+									display: false,
+									}
+								}
+							});
+						</script>
+					<div class="sumber">
+						sumber: Suruhanjaya Pilihan Raya
+					</div>
+				</div>
 			<h2>⋅ ⋅ ⋅</h2>
 					<!---- TULISAN TERKINI / توليسن ترکيني ---->
 			<h2>Tulisan Terkini / توليسن ترکيني</h2>
