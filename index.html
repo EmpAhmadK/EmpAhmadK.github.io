@@ -247,9 +247,16 @@
 			</div>
 			<div style="text-align:center; margin-bottom:20px; font-size:1.3em;">Setakat jam <span id="waktu"></span> malam<br />(tepat dalam lebih kurang 1 minit)</div>
 			<script>
-				var hari = new Date();
-				var masa = hari.getHours() + "." + hari.getMinutes();
-					document.getElementById("waktu").innerHTML = masa;
+				function kemaskiniWaktu() {
+					var hari = new Date();
+					var masa = hari.getHours() + "." + hari.getMinutes();
+						document.getElementById("waktu").innerHTML = masa;
+				}
+					
+				document.addEventListener('DOMContentLoaded', function () {
+					kemaskiniWaktu();
+					setInterval(kemaskiniWaktu, 300000);
+				});
 			</script>
 			<a href="javascript:location.reload(true)" style="color:white; text-decoration:none;"><div class="butang-segarsemula">Segar semula halaman<br/>سݢر سمولا هلمن
 			</div></a>
