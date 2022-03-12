@@ -66,6 +66,14 @@ h3 {
 	background:#6d6d6d;
 }
 
+.latar-pkr {
+	background:#009cac;
+}
+
+.latar-muda {
+	background:#000000;
+}
+
 .parti- {
 	background:#AAAAAA;
 }
@@ -92,6 +100,14 @@ h3 {
 
 .parti-bl {
 	background:#6d6d6d;
+}
+
+.parti-pkr {
+	background:#009cac;
+}
+
+.parti-muda {
+	background:#000000;
 }
 
 /* PEMFORMATAN */
