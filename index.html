@@ -58,6 +58,196 @@
 				</div>
 				<script async src="https://static.addtoany.com/menu/page.js"></script>
 			</div>
+				<!---- KEPUTUSAN PILIHAN RAYA / کڤوتوسن ڤيليهن راي ---->
+			<h2 id="keputusan">Keputusan Tidak Rasmi / کڤوتوسن تيدق راسمي</h2>
+			<div class="modul-lebar keputusan-bekas">
+				<div class="keputusan latar-bn">
+					<div class="keputusan-anak-logo"><img src="./aset/parti/k-bn.SVG" style="width: 150px;" class="keputusan-anak-logo-gambar"></div>
+					<div class="keputusan-anak-nama">Barisan Nasional</br>باريسن ناسيونل</div>
+					<div class="keputusan-anak-kerusi">
+						<div id="keputusan-bn" class="keputusan-anak-kerusi-angka">0</div>
+						<div class="keputusan-anak-kerusi-tulis">kerusi/کروسي</div>
+					</div>
+				</div>
+				<script type="text/javascript">
+					function keputusanBN() {
+						var xhttp = new XMLHttpRequest();
+						xhttp.onreadystatechange = function() {
+							if (this.readyState == 4 && this.status == 200) {
+								document.getElementById("keputusan-bn").innerHTML = this.responseText;
+							}
+						};
+						xhttp.open("GET", "./keputusan/keputusan-bn.txt?dc="+"?dc="+(new Date()).getTime(), true);
+						xhttp.send();
+						console.log("BN-Berjaya");
+					}
+					
+					document.addEventListener('DOMContentLoaded', function () {
+						keputusanBN();
+						setInterval(keputusanBN, 30000);
+						console.log("BN-Mula");
+					});
+				</script>
+				<div class="keputusan latar-ph">
+					<div class="keputusan-anak-logo"><img src="./aset/parti/k-ph.SVG" style="width: 150px;" class="keputusan-anak-logo-gambar"></div>
+					<div class="keputusan-anak-nama">Pakatan Harapan +</br>+ ڤاکتن هارڤن</div>
+					<div class="keputusan-anak-kerusi">
+						<div id="keputusan-ph" class="keputusan-anak-kerusi-angka">0</div>
+						<div class="keputusan-anak-kerusi-tulis">kerusi/کروسي</div>
+					</div>
+				</div>
+				<script type="text/javascript">
+					function keputusanPH() {
+						var xhttp = new XMLHttpRequest();
+						xhttp.onreadystatechange = function() {
+							if (this.readyState == 4 && this.status == 200) {
+								document.getElementById("keputusan-ph").innerHTML = this.responseText;
+							}
+						};
+						xhttp.open("GET", "./keputusan/keputusan-ph.txt?dc="+"?dc="+(new Date()).getTime(), true);
+						xhttp.send();
+						console.log("PH-Berjaya");
+					}
+					
+					document.addEventListener('DOMContentLoaded', function () {
+						keputusanPH();
+						setInterval(keputusanPH, 30000);
+						console.log("PH-Mula");
+					});
+				</script>
+				<div class="keputusan latar-pn">
+					<div class="keputusan-anak-logo"><img src="./aset/parti/k-pn.SVG" style="width: 150px;" class="keputusan-anak-logo-gambar"></div>
+					<div class="keputusan-anak-nama">Perikatan Nasional</br>ڤرايکتن ناسيونل</div>
+					<div class="keputusan-anak-kerusi">
+						<div id="keputusan-pn" class="keputusan-anak-kerusi-angka">0</div>
+						<div class="keputusan-anak-kerusi-tulis">kerusi/کروسي</div>
+					</div>
+				</div>
+				<script type="text/javascript">
+					function keputusanPN() {
+						var xhttp = new XMLHttpRequest();
+						xhttp.onreadystatechange = function() {
+							if (this.readyState == 4 && this.status == 200) {
+								document.getElementById("keputusan-pn").innerHTML = this.responseText;
+							}
+						};
+						xhttp.open("GET", "./keputusan/keputusan-pn.txt?dc="+"?dc="+(new Date()).getTime(), true);
+						xhttp.send();
+						console.log("PN-Berjaya");
+					}
+					
+					document.addEventListener('DOMContentLoaded', function () {
+						keputusanPN();
+						setInterval(keputusanPN, 30000);
+						console.log("PN-Mula");
+					});
+				</script>
+				<div class="keputusan latar-pj">
+					<div class="keputusan-anak-logo"><img src="./aset/parti/k-pj.SVG" style="width: 150px;" class="keputusan-anak-logo-gambar"></div>
+					<div class="keputusan-anak-nama">Parti Pejuang</br>ڤرتي ڤجواڠ</div>
+					<div class="keputusan-anak-kerusi">
+						<div id="keputusan-pj" class="keputusan-anak-kerusi-angka">0</div>
+						<div class="keputusan-anak-kerusi-tulis">kerusi/کروسي</div>
+					</div>
+				</div>
+				<script type="text/javascript">
+					function keputusanPJ() {
+						var xhttp = new XMLHttpRequest();
+						xhttp.onreadystatechange = function() {
+							if (this.readyState == 4 && this.status == 200) {
+								document.getElementById("keputusan-pj").innerHTML = this.responseText;
+							}
+						};
+						xhttp.open("GET", "./keputusan/keputusan-pj.txt?dc="+"?dc="+(new Date()).getTime(), true);
+						xhttp.send();
+						console.log("PJ-Berjaya");
+					}
+					
+					document.addEventListener('DOMContentLoaded', function () {
+						keputusanPJ();
+						setInterval(keputusanPJ, 30000);
+						console.log("PJ-Mula");
+					});
+				</script>
+				<div class="keputusan latar-wr">
+					<div class="keputusan-anak-logo"><img src="./aset/parti/k-wr.SVG" style="width: 150px;" class="keputusan-anak-logo-gambar"></div>
+					<div class="keputusan-anak-nama">Parti Warisan</br>ڤرتي واريثن</div>
+					<div class="keputusan-anak-kerusi">
+						<div id="keputusan-wr" class="keputusan-anak-kerusi-angka">0</div>
+						<div class="keputusan-anak-kerusi-tulis">kerusi/کروسي</div>
+					</div>
+				</div>
+				<script type="text/javascript">
+					function keputusanWR() {
+						var xhttp = new XMLHttpRequest();
+						xhttp.onreadystatechange = function() {
+							if (this.readyState == 4 && this.status == 200) {
+								document.getElementById("keputusan-wr").innerHTML = this.responseText;
+							}
+						};
+						xhttp.open("GET", "./keputusan/keputusan-wr.txt?dc="+"?dc="+(new Date()).getTime(), true);
+						xhttp.send();
+						console.log("WR-Berjaya");
+					}
+					
+					document.addEventListener('DOMContentLoaded', function () {
+						keputusanWR();
+						setInterval(keputusanWR, 30000);
+						console.log("WR-Mula");
+					});
+				</script>
+				<div class="keputusan latar-bl">
+					<div class="keputusan-anak-logo"><img src="./aset/parti/k-bl.SVG" style="width: 150px;" class="keputusan-anak-logo-gambar"></div>
+					<div class="keputusan-anak-nama">Lain-lain</br>لا<span style="bottom:5px;position:relative;">ء</span>ين٢</div>
+					<div class="keputusan-anak-kerusi">
+						<div id="keputusan-bl" class="keputusan-anak-kerusi-angka">0</div>
+						<div class="keputusan-anak-kerusi-tulis">kerusi/کروسي</div>
+					</div>
+				<script>
+					function keputusanBL() {
+						var xhttp = new XMLHttpRequest();
+						xhttp.onreadystatechange = function() {
+							if (this.readyState == 4 && this.status == 200) {
+								document.getElementById("keputusan-bl").innerHTML = this.responseText;
+							}
+						};
+						xhttp.open("GET", "./keputusan/keputusan-bl.txt?dc="+"?dc="+(new Date()).getTime(), true);
+						xhttp.send();
+						console.log("BL-Berjaya");
+					}
+					
+					document.addEventListener('DOMContentLoaded', function () {
+						keputusanBL();
+						setInterval(keputusanBL, 30000);
+						console.log("BL-Mula");
+					});
+				
+					/*function mulaKemasKini () {
+						const angkaBL = document.getElementById('keputusan-bl');
+						
+						setInterval(function () {
+							fetch('keputusan-bl.php').then(function (response) {
+								return response.json();
+							}).then(function (data) {
+								angkaBL.textContent = data.keputusanBL;
+								console.log("Berjaya");
+							}).catch(function (error) {
+								console.log("Ralat");
+								console.log(error);
+							});
+						}, 2000);
+					}
+					
+					document.addEventListener('DOMContentLoaded', function () {
+						mulaKemasKini();
+						console.log("Mula");
+					});*/
+				</script>
+				</div>
+			</div>
+			<a href="javascript:location.reload(true)" style="color:white; text-decoration:none;"><div class="butang-segarsemula">Segar semula halaman<br/>سݢر سمولا هلمن
+			</div></a>
+			<h2>⋅ ⋅ ⋅</h2>
 				<!---- MENU UTAMA / مينو اوتام ---->
 			<div class="modul">
 				<h3 class="halimunan-ketika-atasmeja h3" style="text-align: left;">MENU</h2>
@@ -1104,200 +1294,6 @@
 					<p>2018: Md Othman Yusof (BN-UMNO) - Maj: 862</p>
 				</div>
 			</div>
-			<h2>⋅ ⋅ ⋅</h2>
-				<!---- KEPUTUSAN PILIHAN RAYA / کڤوتوسن ڤيليهن راي ---->
-			<h2 id="keputusan">Keputusan Pilihan Raya / کڤوتوسن ڤيليهن راي</h2>
-			<div class="modul latar-bl" style="text-align: center; border-radius: 10px; padding: 25px; font-size: 1.1em; color: white;">
-				<p>Bahagian ini akan mula dikemas kini pada malam hari mengundi (12 Mac)</p>
-				<p style="direction:rtl">بهاݢين اين اکن مولا دکمس کيني ڤد مالم هاري مڠوندي (12 مچ)</p>
-			</div>
-			<div class="modul-lebar keputusan-bekas">
-				<div class="keputusan latar-bn">
-					<div class="keputusan-anak-logo"><img src="./aset/parti/k-bn.SVG" style="width: 150px;" class="keputusan-anak-logo-gambar"></div>
-					<div class="keputusan-anak-nama">Barisan Nasional</br>باريسن ناسيونل</div>
-					<div class="keputusan-anak-kerusi">
-						<div id="keputusan-bn" class="keputusan-anak-kerusi-angka">0</div>
-						<div class="keputusan-anak-kerusi-tulis">kerusi/کروسي</div>
-					</div>
-				</div>
-				<script type="text/javascript">
-					function keputusanBN() {
-						var xhttp = new XMLHttpRequest();
-						xhttp.onreadystatechange = function() {
-							if (this.readyState == 4 && this.status == 200) {
-								document.getElementById("keputusan-bn").innerHTML = this.responseText;
-							}
-						};
-						xhttp.open("GET", "./keputusan/keputusan-bn.txt?dc="+"?dc="+(new Date()).getTime(), true);
-						xhttp.send();
-						console.log("BN-Berjaya");
-					}
-					
-					document.addEventListener('DOMContentLoaded', function () {
-						keputusanBN();
-						setInterval(keputusanBN, 30000);
-						console.log("BN-Mula");
-					});
-				</script>
-				<div class="keputusan latar-ph">
-					<div class="keputusan-anak-logo"><img src="./aset/parti/k-ph.SVG" style="width: 150px;" class="keputusan-anak-logo-gambar"></div>
-					<div class="keputusan-anak-nama">Pakatan Harapan +</br>+ ڤاکتن هارڤن</div>
-					<div class="keputusan-anak-kerusi">
-						<div id="keputusan-ph" class="keputusan-anak-kerusi-angka">0</div>
-						<div class="keputusan-anak-kerusi-tulis">kerusi/کروسي</div>
-					</div>
-				</div>
-				<script type="text/javascript">
-					function keputusanPH() {
-						var xhttp = new XMLHttpRequest();
-						xhttp.onreadystatechange = function() {
-							if (this.readyState == 4 && this.status == 200) {
-								document.getElementById("keputusan-ph").innerHTML = this.responseText;
-							}
-						};
-						xhttp.open("GET", "./keputusan/keputusan-ph.txt?dc="+"?dc="+(new Date()).getTime(), true);
-						xhttp.send();
-						console.log("PH-Berjaya");
-					}
-					
-					document.addEventListener('DOMContentLoaded', function () {
-						keputusanPH();
-						setInterval(keputusanPH, 30000);
-						console.log("PH-Mula");
-					});
-				</script>
-				<div class="keputusan latar-pn">
-					<div class="keputusan-anak-logo"><img src="./aset/parti/k-pn.SVG" style="width: 150px;" class="keputusan-anak-logo-gambar"></div>
-					<div class="keputusan-anak-nama">Perikatan Nasional</br>ڤرايکتن ناسيونل</div>
-					<div class="keputusan-anak-kerusi">
-						<div id="keputusan-pn" class="keputusan-anak-kerusi-angka">0</div>
-						<div class="keputusan-anak-kerusi-tulis">kerusi/کروسي</div>
-					</div>
-				</div>
-				<script type="text/javascript">
-					function keputusanPN() {
-						var xhttp = new XMLHttpRequest();
-						xhttp.onreadystatechange = function() {
-							if (this.readyState == 4 && this.status == 200) {
-								document.getElementById("keputusan-pn").innerHTML = this.responseText;
-							}
-						};
-						xhttp.open("GET", "./keputusan/keputusan-pn.txt?dc="+"?dc="+(new Date()).getTime(), true);
-						xhttp.send();
-						console.log("PN-Berjaya");
-					}
-					
-					document.addEventListener('DOMContentLoaded', function () {
-						keputusanPN();
-						setInterval(keputusanPN, 30000);
-						console.log("PN-Mula");
-					});
-				</script>
-				<div class="keputusan latar-pj">
-					<div class="keputusan-anak-logo"><img src="./aset/parti/k-pj.SVG" style="width: 150px;" class="keputusan-anak-logo-gambar"></div>
-					<div class="keputusan-anak-nama">Parti Pejuang</br>ڤرتي ڤجواڠ</div>
-					<div class="keputusan-anak-kerusi">
-						<div id="keputusan-pj" class="keputusan-anak-kerusi-angka">0</div>
-						<div class="keputusan-anak-kerusi-tulis">kerusi/کروسي</div>
-					</div>
-				</div>
-				<script type="text/javascript">
-					function keputusanPJ() {
-						var xhttp = new XMLHttpRequest();
-						xhttp.onreadystatechange = function() {
-							if (this.readyState == 4 && this.status == 200) {
-								document.getElementById("keputusan-pj").innerHTML = this.responseText;
-							}
-						};
-						xhttp.open("GET", "./keputusan/keputusan-pj.txt?dc="+"?dc="+(new Date()).getTime(), true);
-						xhttp.send();
-						console.log("PJ-Berjaya");
-					}
-					
-					document.addEventListener('DOMContentLoaded', function () {
-						keputusanPJ();
-						setInterval(keputusanPJ, 30000);
-						console.log("PJ-Mula");
-					});
-				</script>
-				<div class="keputusan latar-wr">
-					<div class="keputusan-anak-logo"><img src="./aset/parti/k-wr.SVG" style="width: 150px;" class="keputusan-anak-logo-gambar"></div>
-					<div class="keputusan-anak-nama">Parti Warisan</br>ڤرتي واريثن</div>
-					<div class="keputusan-anak-kerusi">
-						<div id="keputusan-wr" class="keputusan-anak-kerusi-angka">0</div>
-						<div class="keputusan-anak-kerusi-tulis">kerusi/کروسي</div>
-					</div>
-				</div>
-				<script type="text/javascript">
-					function keputusanWR() {
-						var xhttp = new XMLHttpRequest();
-						xhttp.onreadystatechange = function() {
-							if (this.readyState == 4 && this.status == 200) {
-								document.getElementById("keputusan-wr").innerHTML = this.responseText;
-							}
-						};
-						xhttp.open("GET", "./keputusan/keputusan-wr.txt?dc="+"?dc="+(new Date()).getTime(), true);
-						xhttp.send();
-						console.log("WR-Berjaya");
-					}
-					
-					document.addEventListener('DOMContentLoaded', function () {
-						keputusanWR();
-						setInterval(keputusanWR, 30000);
-						console.log("WR-Mula");
-					});
-				</script>
-				<div class="keputusan latar-bl">
-					<div class="keputusan-anak-logo"><img src="./aset/parti/k-bl.SVG" style="width: 150px;" class="keputusan-anak-logo-gambar"></div>
-					<div class="keputusan-anak-nama">Lain-lain</br>لا<span style="bottom:5px;position:relative;">ء</span>ين٢</div>
-					<div class="keputusan-anak-kerusi">
-						<div id="keputusan-bl" class="keputusan-anak-kerusi-angka">0</div>
-						<div class="keputusan-anak-kerusi-tulis">kerusi/کروسي</div>
-					</div>
-				<script>
-					function keputusanBL() {
-						var xhttp = new XMLHttpRequest();
-						xhttp.onreadystatechange = function() {
-							if (this.readyState == 4 && this.status == 200) {
-								document.getElementById("keputusan-bl").innerHTML = this.responseText;
-							}
-						};
-						xhttp.open("GET", "./keputusan/keputusan-bl.txt?dc="+"?dc="+(new Date()).getTime(), true);
-						xhttp.send();
-						console.log("BL-Berjaya");
-					}
-					
-					document.addEventListener('DOMContentLoaded', function () {
-						keputusanBL();
-						setInterval(keputusanBL, 30000);
-						console.log("BL-Mula");
-					});
-				
-					/*function mulaKemasKini () {
-						const angkaBL = document.getElementById('keputusan-bl');
-						
-						setInterval(function () {
-							fetch('keputusan-bl.php').then(function (response) {
-								return response.json();
-							}).then(function (data) {
-								angkaBL.textContent = data.keputusanBL;
-								console.log("Berjaya");
-							}).catch(function (error) {
-								console.log("Ralat");
-								console.log(error);
-							});
-						}, 2000);
-					}
-					
-					document.addEventListener('DOMContentLoaded', function () {
-						mulaKemasKini();
-						console.log("Mula");
-					});*/
-				</script>
-				</div>
-			</div>
-			<a href="javascript:location.reload(true)" style="color:white; text-decoration:none;"><div class="butang-segarsemula">Segar semula halaman<br/>سݢر سمولا هلمن
-			</div></a>
 			<h2>⋅ ⋅ ⋅</h2>
 					<!---- TULISAN TERKINI / توليسن ترکيني ---->
 			<h2>Tulisan Terkini / توليسن ترکيني</h2>
