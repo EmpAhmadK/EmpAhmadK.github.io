@@ -818,3 +818,21 @@ h3 {
 	top: 0;
 	transition: 0.3s;
 }
+
+.keputusan-menang {
+	font-weight: bold;
+}
+
+.keputusan-menang::after {
+	content: " - M/مـ";
+}
+
+.keputusan-kalah::after {
+	font-weight: 600;
+	content: " - K/ک";
+}
+
+.keputusan-hilangdeposit::after {
+	font-weight: 600;
+	content: " - HD/.ه‍.د";
+}
